@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="bakar.css" />
+    <style>
+      .fancy-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        color: #ff69b4; /* Pink color */
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="heart"></div>
+      <div class="lid one"></div>
+      <div class="lid two"></div>
+      <div class="envelope"></div>
+      <div class="letter"></div> 
+      <div class="letter1"></div> 
+      <div class="letter2"></div> 
+      <div class="letter4"></div> 
+      <div class="letter5"></div> 
+      <div class="letter6"></div> 
+      <div class="letter7"></div> 
+      <div class="letter8"></div> 
+      <div class="letter3">
+        </div>
+      </div>
+    </div>
+    <!-- Yes and No buttons -->
+    <div class="buttons">
+        <button class="yes-button" id="yes-button">Yes</button>
+        <script>
+          // Get a reference to the "Yes" button
+          const yesButton = document.getElementById("yes-button");
+        
+          // Add a click event listener to the button
+          yesButton.addEventListener("click", function () {
+            // Navigate to the new page when the button is clicked
+            window.location.href = "merah.html"; // Replace with the actual URL of your new page
+          });
+        </script>
+        
+        <button class="no-button" id="no-button">No</button>
+        <script>
+          // Get a reference to the "No" button
+          const noButton = document.getElementById("no-button");
+        
+          // Add a click event listener to the button
+          noButton.addEventListener("click", function () {
+            // Navigate to the new page when the button is clicked
+            window.location.href = "no.html"; // Replace with the actual URL of your new page
+          });
+        </script>
+    </div>
+  </body>
+</html>

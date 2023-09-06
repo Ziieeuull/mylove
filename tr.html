@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Page with Background Image and Autoplay Song</title>
+    <style>
+        /* Define a keyframe animation called "shake" */
+        @keyframes shake {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(-5px, 0);
+            }
+            50% {
+                transform: translate(5px, 0);
+            }
+            75% {
+                transform: translate(-5px, 0);
+            }
+            100% {
+                transform: translate(5px, 0);
+            }
+        }
+
+        body {
+            background-image: url('rock.jpg');
+            background-size: cover;
+            /* Apply the "shake" animation to the background */
+            animation: shake 0.5s ease infinite; /* Adjust the duration and other properties as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your page content goes here -->
+
+    <!-- Audio element for the song with autoplay -->
+    <audio controls autoplay>
+        <source src="tfc.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
+</html>

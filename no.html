@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="no.css" />
+    <style>
+      /* Additional CSS for loading text */
+      .loading-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        color: #ff69b4; /* Pink color */
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 20px;
+      }
+      
+      /* Updated styles for loader */
+      :root {
+        --main-color: #ecf0f1;
+        --point-color: #555;
+        --size: 5px;
+      }
+      
+      .loader {
+        background-color: var(--main-color);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column; /* Align text below loader */
+        align-items: center;
+        justify-content: center;
+        z-index: 100000;
+      }
+      
+      .loader__element {
+        border-radius: 100%;
+        border: var(--size) solid var(--point-color);
+        margin: calc(var(--size) * 2);
+      }
+      
+      .loader__element:nth-child(1) {
+        animation: preloader 0.6s ease-in-out alternate infinite;
+      }
+      .loader__element:nth-child(2) {
+        animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+      }
+      
+      .loader__element:nth-child(3) {
+        animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+      }
+      
+      @keyframes preloader {
+        100% {
+          transform: scale(2);
+        }
+      }
+      
+      /* Button styles */
+      .click-button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        background-color: #ff69b4; /* Pink color */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        text-decoration: none; /* Remove underlines from anchor elements */
+        display: inline-block;
+      }
+      
+      /* Button hover effect */
+      .click-button:hover {
+        background-color: #ff3e00; /* Darker color on hover */
+        transform: scale(1.05); /* Slight scaling effect on hover */
+      }
+    </style>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+    <!-- Loading Text -->
+    <div class="loading-text">Loading...</div>
+    <!-- "Click Me" Button -->
+    <a class="click-button" href="tr.html">Click Me</a>
+  </div>
+</body>
+</html>

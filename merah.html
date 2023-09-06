@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="masak.css" />
+    <style>
+      /* Add this CSS for flying birds */
+      .birds {
+        position: absolute;
+        top: 20px; /* Adjust the vertical position */
+        left: -50px; /* Start the birds from outside the left edge */
+        font-size: 24px;
+        color: #333; /* Bird color */
+        animation: fly 10s linear infinite; /* Adjust the animation duration */
+        white-space: nowrap;
+        opacity: 0; /* Initially hidden */
+      }
+
+      @keyframes fly {
+        to {
+          transform: translateX(100vw); /* Move the bird across the screen */
+          opacity: 1; /* Show the bird when it starts flying */
+        }
+      }
+
+      /* Style for the "Click Me" link */
+      .click-me-link {
+        display: inline-block;
+        text-decoration: none; /* Remove underlines */
+        font-family: 'Poppins', sans-serif;
+        background-color: #2253bd; /* Pink color */
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+        position: absolute; /* Position it absolutely */
+        left: 50%; /* Center it horizontally */
+        transform: translateX(-50%) translateY(20px); /* Adjust the vertical position */
+        opacity: 0.7; /* Set the opacity to 70% */
+      }
+
+      .click-me-link:hover {
+        background-color: #37bf37; /* Lighter pink color on hover */
+        transform: scale(1.1); /* Add a slight scale effect on hover */
+        opacity: 1; /* Restore full opacity on hover */
+      }
+    </style>
+</head>
+<body>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id="click" type="checkbox" />
+        <label class="click" for="click"></label>
+        <div class="wishes">I LOVE YOU TOO!!</div>
+        <div class="sparkles">
+          <div class="spark1"></div>
+          <div class="spark2"></div>
+          <div class="spark3"></div>
+          <div class="spark4"></div>
+          <div class="spark5"></div>
+          <div class="spark6"></div>
+        </div>
+      </div>
+      <!-- Add the "Click Me" button here -->
+      <a href="https://youtu.be/xvFZjo5PgG0?si=u7ZBwHnRThCDwnoZ" class="click-me-link">Click Me</a>
+    </div>
+    <!-- Add flying birds -->
+    <div class="birds">🐦</div>
+    <div class="birds">🐦</div>
+    <div class="birds">🐦</div>
+    <div class="birds">🐦</div>
+    <div class="birds">🐦</div>
+</body>
+</html>
